@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col justify-center items-center min-h-screen">
+    <h1 class="text-3xl font-bold mb-4">Tic Tac Toe</h1>
+    <div class="grid grid-cols-3 gap-4 w-48">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+    </div>
+    <p id="result" class="mt-4 text-xl"></p>
+    <button onclick="restartGame()" class="mt-4 game-button bg-red-500 hover:bg-red-600">Restart</button>
+    <script src="tic-tac-toe.js"></script>
+</body>
+</html>

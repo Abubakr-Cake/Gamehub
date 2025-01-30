@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white flex flex-col justify-center items-center min-h-screen">
+    <h1 class="text-3xl font-bold mb-4">Hangman</h1>
+    <p id="word-display" class="text-2xl mb-4"></p>
+    <input type="text" id="guess" maxlength="1" class="text-black p-2 rounded-lg" placeholder="Enter a letter">
+    <button onclick="checkLetter()" class="mt-4 game-button bg-blue-500 hover:bg-blue-600">Guess</button>
+    <p id="message" class="mt-4 text-xl"></p>
+    <script src="hangman.js"></script>
+</body>
+</html>
